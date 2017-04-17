@@ -1,0 +1,214 @@
+﻿body {
+}
+
+.pictureSide {
+    padding: 20px 40px;
+}
+
+.mathSide {
+    padding: 20px 0 0 100px;
+}
+
+.wholePicture {
+    height: 477px;
+    width: 477px;
+    border: 1px solid #2c3e50;
+}
+
+.mathProblem {
+    width: 120px;
+    margin: 0 10px;
+}
+
+.startGame {
+    float:right;
+}
+
+#txtAnswer {
+    text-align:right;
+}
+
+.operand {
+    width: 100px;
+    text-align: right;
+}
+
+.operator {
+    float:left;
+    margin-top:10px;
+}
+
+.btnNext
+{
+    margin-left: -5px;
+    margin-bottom: 20px;
+    width: 130px;
+}
+
+.pokedexEntry {
+    width: 300px;
+    height: 450px;
+    float: left;
+    
+    text-align:center;
+}
+
+.pokedexPicture {
+    width: 250px;
+    height: 250px;
+    background-image: url(../images/pokeball.jpg);
+    background-size:contain;
+    margin: 25px;
+}
+
+.settingsForm {
+    padding: 20px 60px;
+    max-width: 600px;
+}
+
+.settingsLabel {
+    margin-top:15px;
+}
+
+.settingsForm legend {
+    margin-bottom: 0;
+}
+
+.settingsGroup {
+    margin-left: 40px;
+}
+
+
+.picturePart {
+    width: 95px;
+    height: 95px;
+    float: left;
+    visibility: hidden;
+}
+.picturePart.visible {
+    visibility:visible;
+}
+
+.picturePreview {
+    border: 1px solid #2c3e50;
+    visibility: visible;
+    margin-left:12px;
+}
+
+.picturePart.unfound {
+    background-color:aliceblue;
+    visibility:visible;
+    background-image:none!important;
+}
+
+.picturePart1 {
+    background-position-x: -95px;
+}
+.picturePart2 {
+    background-position-x: -190px;
+}
+.picturePart3 {
+    background-position-x: -285px;
+}
+.picturePart4 {
+    background-position-x: -380px;
+}
+.picturePart5 {
+    background-position-y: -95px;
+}
+.picturePart6 {
+    background-position-x: -95px;
+    background-position-y: -95px;
+}
+.picturePart7 {
+    background-position-x: -190px;
+    background-position-y: -95px;
+}
+
+.picturePart8 {
+    background-position-x: -285px;
+    background-position-y: -95px;
+}
+
+.picturePart9 {
+    background-position-x: -380px;
+    background-position-y: -95px;
+}
+.picturePart10 {
+    background-position-y: -190px;
+}
+
+.picturePart11 {
+    background-position-x: -95px;
+    background-position-y: -190px;
+}
+
+.picturePart12 {
+    background-position-x: -190px;
+    background-position-y: -190px;
+}
+
+.picturePart13 {
+    background-position-x: -285px;
+    background-position-y: -190px;
+}
+
+.picturePart14 {
+    background-position-x: -380px;
+    background-position-y: -190px;
+}
+.picturePart15 {
+    background-position-y: -285px;
+}
+
+.picturePart16 {
+    background-position-x: -95px;
+    background-position-y: -285px;
+}
+
+.picturePart17 {
+    background-position-x: -190px;
+    background-position-y: -285px;
+}
+
+.picturePart18 {
+    background-position-x: -285px;
+    background-position-y: -285px;
+}
+
+.picturePart19 {
+    background-position-x: -380px;
+    background-position-y: -285px;
+}
+.picturePart20 {
+    background-position-y: -380px;
+}
+
+.picturePart21 {
+    background-position-x: -95px;
+    background-position-y: -380px;
+}
+
+.picturePart22 {
+    background-position-x: -190px;
+    background-position-y: -380px;
+}
+
+.picturePart23 {
+    background-position-x: -285px;
+    background-position-y: -380px;
+}
+
+.picturePart24 {
+    background-position-x: -380px;
+    background-position-y: -380px;
+}
+
+
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading p,
+.wf-loading li {
+    opacity: 1;
+}

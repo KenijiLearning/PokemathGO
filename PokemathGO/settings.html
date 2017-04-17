@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pokémath GO - Pokedex</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Droid Sans', 'Droid Serif']
+            }
+        });
+    </script>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/settings.js"></script>
+    
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/pokemath.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Pokémath GO</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="pokedex.html">Pokedex</a></li>
+                    <li class="active"><a href="settings.html">Settings</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <form class="form-vertical settingsForm">
+        <fieldset>
+            <legend>Operators</legend>
+            <div class="form-group settingsGroup operatorsGroup">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="chkAdd"> Addition
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="chkSub"> Subtraction
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="chkMult"> Multiplication
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="chkDiv"> Division
+                        </label>
+                    </div>
+            </div>
+            <legend>Addition / Subtraction Values</legend>
+            <div class="form-group settingsGroup addGroup">
+                    <label class="settingsLabel">Minimum</label>
+                    <input type="number" class="form-control addMin" />
+                    <label class="settingsLabel">Maximum</label>
+                    <input type="number" class="form-control addMax" />
+            </div>
+
+            <legend>Multiplication / Division Values</legend>
+            <div class="form-group settingsGroup multGroup">
+                
+                    <label class="settingsLabel">Minimum</label>
+                    <input type="number" class="form-control multMin" />
+                    <label class="settingsLabel">Maximum</label>
+                    <input type="number" class="form-control multMax" />
+                
+            </div>
+        </fieldset>
+        <div class="btn btn-info btnSubmit">Save</div>
+        </form>
+    <div class="modal fade" id="saveMessage" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Saved</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Your settings have been saved.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
