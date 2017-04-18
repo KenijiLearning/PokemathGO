@@ -5,7 +5,7 @@
         var container = $('.pokedex');
 
         $.each(allPokemon, function (index, pokemon) {
-            var entry = $('<div>').addClass('pokedexEntry');
+            var entry = $('<div>').addClass('pokedexEntry').attr('id', 'p' + pokemon.id);
             var picture = $('<div>').addClass('pokedexPicture');
             var span = $('<h3>');
             var catchCount = userSettings.pokedex[pokemon.id] ? userSettings.pokedex[pokemon.id].caught : 0;
@@ -30,5 +30,9 @@
 
             container.append(entry);
         });
+
+        if (location.search && $('#p' + location.search.substr(1)).length) {
+            $('#p' + location.search.substr(1))[0].scrollIntoView(true);
+        }
     });
 });

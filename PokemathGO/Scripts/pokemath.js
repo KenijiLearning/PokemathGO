@@ -52,6 +52,8 @@ $(function () {
             $('#finishDialog .oldPokemon').hide();
         }
 
+        $('.newPokedexLink').attr('href', 'pokedex.html?' + allPokemon[currentPokemonIndex].id);
+
         pokemath.saveSettings(userSettings);
 
         $('#finishDialog').modal('show');
