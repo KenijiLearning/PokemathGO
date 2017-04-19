@@ -160,7 +160,12 @@ $(function () {
     userSettings = pokemath.getSettings();
     $('.startGame').click(startNewGame);
     $('#txtAnswer').keyup(onKeyUp);
-    $('.btnNext').click(startNewMathProblem);
+    $('.btnNext').click(function () {
+        if ($(this).attr('disabled')) {
+            return;
+        }
+        startNewMathProblem();
+    });
     $.getJSON('pokemon.json', function (data) {
         allPokemon = data;
     });

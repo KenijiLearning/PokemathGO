@@ -44,8 +44,27 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <div class="pokedex">
-
+    <div class="btn btn-info btnSave" style="position:absolute;right:20px;">Save Pokedex</div>
+    <div class="pokedex" style="margin-top:40px;">
+         
+    </div>
+    <div class="modal fade" id="saveMessage" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Export</h4>
+                </div>
+                <div class="modal-body">
+                    <p>You can use the following link to remember your current pokedex, and move it to another browser.</p>
+                    <p class="text-danger">BEWARE: If you use this link in a browser, it will replace the pokedex of that browser with the current state of this pokedex.</p>
+                    <input type="text" class="form-control" id="pokedexLink" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
