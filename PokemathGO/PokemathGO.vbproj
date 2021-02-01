@@ -367,7 +367,9 @@
     <Content Include="images\258.png" />
     <Content Include="images\259.png" />
     <Content Include="images\260.png" />
+    <Content Include="images\261.png" />
     <Content Include="images\pokeball.jpg" />
+    <Content Include="images\premiumball.jpg" />
     <Content Include="pokedex.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

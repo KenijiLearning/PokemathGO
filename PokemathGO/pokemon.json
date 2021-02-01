@@ -300,7 +300,7 @@
     "name": "Alakazam",
     "evolution": "064"
   },
-    {
+  {
     "id": "066",
     "name": "Machop"
   },
@@ -400,7 +400,7 @@
     "name": "Dewgong",
     "evolution": "086"
   },
-   {
+  {
     "id": "088",
     "name": "Grimer"
   },
@@ -1166,5 +1166,9 @@
     "id": "260",
     "name": "Swampert",
     "evolution": "259"
+  },
+  {
+    "id": "261",
+    "name": "Poochyena"
   }
 ]
