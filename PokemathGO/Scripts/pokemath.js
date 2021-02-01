@@ -18,7 +18,7 @@ $(function () {
 
     function startNewGame() {
         currentPokemonIndex = getRandomIntInclusive(0, allPokemon.length - 1);
-
+        
         while (allPokemon[currentPokemonIndex].evolution && !userSettings.pokedex.hasOwnProperty(allPokemon[currentPokemonIndex].evolution)) {
             currentPokemonIndex = getRandomIntInclusive(0, allPokemon.length - 1);
         }
@@ -39,7 +39,7 @@ $(function () {
     function endGame() {
         //Show the you win message
         $('.mathProblem').hide();
-
+        var id = allPokemon[currentPokemonIndex].id;
         $('#finishDialog .pokemonName').text(allPokemon[currentPokemonIndex].name);
         if (userSettings.pokedex.hasOwnProperty(allPokemon[currentPokemonIndex].id)) {
             userSettings.pokedex[allPokemon[currentPokemonIndex].id].caught += 1; 
@@ -55,6 +55,9 @@ $(function () {
         $('.newPokedexLink').attr('href', 'pokedex.html?' + allPokemon[currentPokemonIndex].id);
 
         pokemath.saveSettings(userSettings);
+
+        //If the pokemon is legendary, show the legendary text
+        $('.legendary').toggle(id === "144" || id === "145" || id === "146" || id === "150" || id === "151" || id == "243" || id === "244" || id === "245" || id === "249" || id === "250" || id === "251");
 
         $('#finishDialog').modal('show');
     }
@@ -83,19 +86,8 @@ $(function () {
 
             if (operator === '/') {
                 operatorDisplay = '÷';
-                while ((num1 / num2) !== Math.round(num1 / num2)) {
-                    num1 = getRandomIntInclusive(userSettings.multMin, userSettings.multMax);
-                    num2 = getRandomIntInclusive(userSettings.multMin, userSettings.multMax);
-
-                    //We want num1 > num2
-                    if (num2 > num1) {
-                        temp = num1;
-                        num1 = num2;
-                        num2 = temp;
-                    }
-                }
-
-                currentAnswer = num1 / num2;
+                currentAnswer = num1;
+                num1 = currentAnswer * num2;
             } else {
                 currentAnswer = num1 * num2;
                 operatorDisplay = 'X';

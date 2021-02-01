@@ -49,7 +49,7 @@
             min = parseInt($('.addMin').val());
             max = parseInt($('.addMax').val());
 
-            if (isNaN(min) || isNaN(max) || min > max) {
+            if (isNaN(min) || isNaN(max) || min > max || min < 5) {
                 $('.addGroup').addClass('has-error');
                 return;
             }
@@ -58,7 +58,7 @@
             min = parseInt($('.multMin').val());
             max = parseInt($('.multMax').val());
 
-            if (isNaN(min) || isNaN(max) || min > max) {
+            if (isNaN(min) || isNaN(max) || min > max || min < 2) {
                 $('.multGroup').addClass('has-error');
                 return;
             }
