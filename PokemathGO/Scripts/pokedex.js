@@ -33,6 +33,10 @@
             var span = $('<h3>');
             var catchCount = userSettings.pokedex[pokemon.id] ? userSettings.pokedex[pokemon.id].caught : 0;
 
+            if (pokemon.premium) {
+                picture.addClass("premium");
+            }
+
             if (catchCount) {
                 span.text(pokemon.name);
                 picture.css('background-image', 'url(images/' + pokemon.id + '.png)');

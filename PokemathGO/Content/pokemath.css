@@ -62,6 +62,10 @@
     margin: 25px;
 }
 
+.pokedexPicture.premium {
+    background-image: url(../images/premiumball.jpg);
+}
+
 .settingsForm {
     padding: 20px 60px;
     max-width: 600px;
