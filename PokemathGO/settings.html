@@ -37,6 +37,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="pokedex.html">Pokedex</a></li>
                     <li class="active"><a href="settings.html">Settings</a></li>
+                    <li><a href="BattleIsland.html">Battle Island</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="about.html">About</a></li>
@@ -48,44 +49,51 @@
         <fieldset>
             <legend>Operators</legend>
             <div class="form-group settingsGroup operatorsGroup">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="chkAdd"> Addition
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="chkSub"> Subtraction
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="chkMult"> Multiplication
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="chkDiv"> Division
-                        </label>
-                    </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="chkAdd"> Addition
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="chkSub"> Subtraction
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="chkMult"> Multiplication
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="chkDiv"> Division
+                    </label>
+                </div>
             </div>
             <legend>Addition / Subtraction Values</legend>
             <div class="form-group settingsGroup addGroup">
-                    <label class="settingsLabel">Minimum</label>
-                    <input type="number" class="form-control addMin" />
-                    <label class="settingsLabel">Maximum</label>
-                    <input type="number" class="form-control addMax" />
+                <label class="settingsLabel">Minimum</label>
+                <input type="number" class="form-control addMin" />
+                <label class="settingsLabel">Maximum</label>
+                <input type="number" class="form-control addMax" />
             </div>
 
             <legend>Multiplication / Division Values</legend>
             <div class="form-group settingsGroup multGroup">
-                
-                    <label class="settingsLabel">Minimum</label>
-                    <input type="number" class="form-control multMin" />
-                    <label class="settingsLabel">Maximum</label>
-                    <input type="number" class="form-control multMax" />
-                
+
+                <label class="settingsLabel">Minimum</label>
+                <input type="number" class="form-control multMin" />
+                <label class="settingsLabel">Maximum</label>
+                <input type="number" class="form-control multMax" />
+
             </div>
+
+            <legend>Username</legend>
+            <div class="form-group settingsGroup addGroup">
+                <label class="settingsLabel">Username</label>
+                <input type="text" class="form-control username" />
+            </div>
+
         </fieldset>
         <div class="btn btn-info btnSubmit">Save</div>
         </form>

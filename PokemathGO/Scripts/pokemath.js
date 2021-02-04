@@ -17,10 +17,10 @@ $(function () {
     }
 
     function startNewGame() {
-        currentPokemonIndex = getRandomIntInclusive(0, allPokemon.length - 1);
+        currentPokemonIndex = getRandomIntInclusive(0, 259);
         
         while (allPokemon[currentPokemonIndex].evolution && !userSettings.pokedex.hasOwnProperty(allPokemon[currentPokemonIndex].evolution)) {
-            currentPokemonIndex = getRandomIntInclusive(0, allPokemon.length - 1);
+            currentPokemonIndex = getRandomIntInclusive(0, 259);
         }
 
         $('.picturePart').css('background-image', 'url(images/' + allPokemon[currentPokemonIndex].id + '.png)').addClass('unfound');

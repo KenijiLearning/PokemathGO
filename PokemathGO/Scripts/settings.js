@@ -36,6 +36,7 @@
         $('.addMax').val(userSettings.addMax);
         $('.multMin').val(userSettings.multMin);
         $('.multMax').val(userSettings.multMax);
+        $('.username').val(userSettings.username);
 
         $('.btnSubmit').click(function () {
             var min, max;
@@ -81,6 +82,7 @@
             userSettings.addMax = parseInt($('.addMax').val());
             userSettings.multMin = parseInt($('.multMin').val());
             userSettings.multMax = parseInt($('.multMax').val());
+            userSettings.username = $('.username').val();
 
             pokemath.saveSettings(userSettings);
             $('#saveMessage').modal('show');

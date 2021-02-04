@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Pokémath GO - Pokedex</title>
+    <title>Pokémath GO - Battle Island</title>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
@@ -13,7 +13,8 @@
     </script>
     <script src="Scripts/jquery-3.1.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-   
+    <script src="Scripts/settings.js"></script>
+    <script src="Scripts/BattleIsland.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/pokemath.css" rel="stylesheet" />
 </head>
@@ -36,27 +37,17 @@
                 <ul class="nav navbar-nav">
                     <li><a href="pokedex.html">Pokedex</a></li>
                     <li><a href="settings.html">Settings</a></li>
-                    <li><a href="BattleIsland.html">Battle Island</a></li>
+                    <li class="active"><a href="BattleIsland.html">Battle Island</a></liclass="active">
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
+
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-
-    <div style="padding:30px 100px;">
-        <h2>Created by</h2>
-        <h4>LJ &#x2164;</h4>
-        <h4>LJ &#x2165;</h4>
-        <h2>Version</h2>
-        <h4>1.0 - Released</h4>
-        <h4>1.1 - Enforce minimum values for settings.</h4>
-        <h4>1.2 - Added pokémon #261. He's in a special ball. I wonder what that means?</h4>
-        <h4>1.2.1 - Patch for 1.2. Added Battle Island (Not In Commision, will be released in 1.4) And username in settings</h4>
-        <h5 style="margin-top:100px;">Pokémon characters © The Pokémon Company International, Inc.</h5>
-        <h5 style="margin-top:105px;">Pokémath Go Game © Chicky Company Gaming & Wormyville Studios</h5>
+    <div class="battlePage">
+        <label class="settingsLabel">Number of Lives: </label><span id="livesLabel">.</span>
     </div>
-    
 </body>
 </html>
